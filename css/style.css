@@ -208,6 +208,58 @@ img {
 
 
 
+
+
+
+
+@media (max-width: 768px) {
+
+  .navbar {
+      position: relative;
+      z-index: 2000;
+  }
+
+  .hamburger {
+      display: flex;
+      z-index: 3000;
+  }
+
+  .nav-menu {
+      position: fixed;
+      top: 70px; /* 🔥 header height */
+      left: -100%;
+      width: 100%;
+      height: calc(100vh - 70px);
+      background: #ffffff;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s ease;
+      z-index: 2500;
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .nav-menu a {
+      font-size: 20px;
+      padding: 15px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
