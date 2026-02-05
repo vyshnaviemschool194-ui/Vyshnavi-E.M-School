@@ -2115,3 +2115,20 @@ img {
   font-size: 24px;
   z-index: 9999;
 }
+
+
+
+
+/* FIX: Hamburger click issue */
+.hamburger {
+    z-index: 2000;
+    cursor: pointer;
+}
+
+.nav-menu {
+    z-index: 1500;
+}
+
+.hero::before {
+    pointer-events: none;
+}
