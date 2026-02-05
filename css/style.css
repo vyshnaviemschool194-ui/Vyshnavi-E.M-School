@@ -2108,10 +2108,10 @@ img {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25d366;
-  color: white;
-  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
   padding: 15px;
+  border-radius: 50%;
   font-size: 24px;
-  z-index: 1000;
+  z-index: 9999;
 }
