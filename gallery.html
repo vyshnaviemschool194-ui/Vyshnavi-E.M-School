@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery - Explore photos of school activities, events, and campus life at Vyshnavi E.M School.">
+    <meta name="keywords" content="gallery, photos, school events, activities, campus">
+    <title>Gallery | Vyshnavi E.M School</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   <div id="header"></div>
+
+<script>
+fetch("./header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Gallery</h1>
+            <p>Capturing moments of learning and joy</p>
+        </div>
+    </section>
+
+    <!-- Gallery Overview -->
+    <section class="gallery-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>Our School in Pictures</h2>
+                    <p>Explore our vibrant campus through photographs that capture the essence of learning, growth, and joy at Vyshnavi E.M School. From classroom activities to cultural events, sports day to award ceremonies - our gallery showcases the rich experiences we offer to our students.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="photo-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Photo Gallery</h2>
+                <p>Memories that last a lifetime</p>
+            </div>
+            
+            <!-- Gallery Filter -->
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="activities">Activities</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="campus">Campus</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="activities">
+                    <div class="gallery-image">
+                        <img src="images/gallery-1.jpg" alt="School Assembly">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>School Assembly</h4>
+                                <p>Morning prayer and assembly</p>
+                                <a href="images/gallery-1.jpg" class="gallery-link" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="sports">
+                    <div class="gallery-image">
+                        <img src="images/gallery-2.jpg" alt="Sports Day">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>Sports Day</h4>
+                                <p>Annual sports competition</p>
+                                <a href="images/gallery-2.jpg" class="gallery-link" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-image">
+                        <img src="images/gallery-3.jpg" alt="Cultural Program">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>Cultural Program</h4>
+                                <p>Annual day celebrations</p>
+                                <a href="images/gallery-3.jpg" class="gallery-link" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-image">
+                        <img src="images/gallery-4.jpg" alt="Award Ceremony">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>Award Ceremony</h4>
+                                <p>Recognizing excellence</p>
+                                <a href="images/gallery-4.jpg" class="gallery-link" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="activities">
+                    <div class="gallery-image">
+                        <img src="images/gallery-5.jpg" alt="Art Class">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>Art & Craft</h4>
+                                <p>Creative expression</p>
+                                <a href="images/gallery-5.jpg" class="gallery-link" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="campus">
+                    <div class="gallery-image">
+                        <img src="images/gallery-6.jpg" alt="Computer Lab">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>Computer Lab</h4>
+                                <p>Digital learning environment</p>
+                                <a href="images/gallery-6.jpg" class="gallery-link" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="campus">
+                    <div class="gallery-image">
+                        <img src="images/playground.jpg" alt="Playground">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>Playground</h4>
+                                <p>Outdoor activities and sports</p>
+                                <a href="images/playground.jpg" class="gallery-link" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="campus">
+                    <div class="gallery-image">
+                        <img src="images/library.jpg" alt="Library">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>Library</h4>
+                                <p>Reading and learning space</p>
+                                <a href="images/library.jpg" class="gallery-link" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="campus">
+                    <div class="gallery-image">
+                        <img src="images/lab.jpg" alt="Science Lab">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>Science Lab</h4>
+                                <p>Practical experiments</p>
+                                <a href="images/lab.jpg" class="gallery-link" data-lightbox="gallery">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Gallery -->
+<section class="video-gallery">
+    <div class="container">
+        <div class="section-header">
+            <h2>Video Gallery</h2>
+            <p>Watch our school in action</p>
+        </div>
+
+        <div class="video-grid">
+
+            <!-- Video 1 -->
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <a href="https://www.youtube.com/watch?v=TDF8LNUG1Sk"
+                       target="_blank"
+                       class="video-thumb"
+                       aria-label="Watch School Activities video on YouTube">
+                        <img src="https://img.youtube.com/vi/TDF8LNUG1Sk/maxresdefault.jpg"
+                             alt="School Activities video thumbnail">
+                        <span class="play-icon" aria-hidden="true">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </a>
+                </div>
+                <h4>School Activities</h4>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <a href="https://www.youtube.com/watch?v=kM_tt1UkCAQ"
+                       target="_blank"
+                       class="video-thumb"
+                       aria-label="Watch Cultural Programs video on YouTube">
+                        <img src="https://img.youtube.com/vi/kM_tt1UkCAQ/maxresdefault.jpg"
+                             alt="Cultural Programs video thumbnail">
+                        <span class="play-icon" aria-hidden="true">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </a>
+                </div>
+                <h4>Cultural Events</h4>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Want to See More?</h2>
+                <p>Visit our school to experience the vibrant learning environment firsthand</p>
+                <a href="contact.html" class="btn btn-primary">Schedule a Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+<script>
+fetch("./footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
